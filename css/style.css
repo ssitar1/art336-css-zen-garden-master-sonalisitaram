@@ -193,7 +193,6 @@ figure {
  */
 hr {
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -310,8 +309,6 @@ input {
  */
 input[type="checkbox"],
 input[type="radio"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -438,21 +435,18 @@ th {
 
 @media screen and (min-width: 768px) {
   .row .col-1 {
-    width: -webkit-calc(8.3333333% - 14px);
     width: calc(8.3333333% - 14px);
   }
 }
 
 @media screen and (min-width: 768px) {
   .row .col-2 {
-    width: -webkit-calc(16.6666666% - 14px);
     width: calc(16.6666666% - 14px);
   }
 }
 
 @media screen and (min-width: 768px) {
   .row .col-3 {
-    width: -webkit-calc(25% - 14px);
     width: calc(25% - 14px);
   }
 }
@@ -461,14 +455,12 @@ th {
   .preamble p:nth-child(1), .preamble p:nth-child(2),
   .preamble p:nth-child(3),
   .row .col-4 {
-    width: -webkit-calc(33.3333333% - 14px);
     width: calc(33.3333333% - 14px);
   }
 }
 
 @media screen and (min-width: 768px) {
   .row .col-5 {
-    width: -webkit-calc(41.6666666% - 14px);
     width: calc(41.6666666% - 14px);
   }
 }
@@ -476,42 +468,36 @@ th {
 @media screen and (min-width: 768px) {
   .explination, .participation,
   .row .col-6 {
-    width: -webkit-calc(50% - 14px);
     width: calc(50% - 14px);
   }
 }
 
 @media screen and (min-width: 768px) {
   .row .col-7 {
-    width: -webkit-calc(58.3333333% - 14px);
     width: calc(58.3333333% - 14px);
   }
 }
 
 @media screen and (min-width: 768px) {
   .row .col-8 {
-    width: -webkit-calc(66.6666666% - 14px);
     width: calc(66.6666666% - 14px);
   }
 }
 
 @media screen and (min-width: 768px) {
   .row .col-9 {
-    width: -webkit-calc(75% - 14px);
     width: calc(75% - 14px);
   }
 }
 
 @media screen and (min-width: 768px) {
   .row .col-10 {
-    width: -webkit-calc(83.3333333% - 14px);
     width: calc(83.3333333% - 14px);
   }
 }
 
 @media screen and (min-width: 768px) {
   .row .col-11 {
-    width: -webkit-calc(91.6666666% - 14px);
     width: calc(91.6666666% - 14px);
   }
 }
@@ -519,15 +505,12 @@ th {
 @media screen and (min-width: 768px) {
   .preamble h3,
   .row .col-12 {
-    width: -webkit-calc(100% - 14px);
     width: calc(100% - 14px);
   }
 }
 
 @media screen and (min-width: 768px) {
   .row-no-gutter {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding-left: 7px;
     padding-right: 7px;
@@ -624,8 +607,6 @@ th {
 
 .row.padding [class^="col-"], .row-no-gutter.padding [class^="col-"],
 [class^="col-"].padding {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 6px;
 }
@@ -668,6 +649,7 @@ th {
   -webkit-box-pack: center;
   -webkit-box-align: center;
   /* Firefox */
+  display: -moz-box;
   -moz-box-pack: center;
   -moz-box-align: center;
   /* IE */
@@ -685,7 +667,6 @@ Responsive Navigation
 */
 nav[role=navigation] {
   clear: both;
-  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
@@ -735,13 +716,10 @@ nav[role=navigation] li a {
   }
 }
 .menu-wrap {
-  -webkit-transition: all .3s linear;
   transition: all .3s linear;
 }
 
 .menu-wrap {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 6px;
 }
@@ -754,7 +732,6 @@ nav[role=navigation] li a {
 .menu-wrap-styles {
   background-color: rgba(0, 0, 0, 0.85);
   height: 100vh;
-  -webkit-transition: all .3s linear;
   transition: all .3s linear;
   width: 100%;
 }
@@ -807,7 +784,6 @@ nav[role=navigation] li a {
   -webkit-transform: translate(0, -50%);
   cursor: pointer;
   -ms-transform: translate(0, -50%);
-  -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   text-align: center;
   width: 40px;
@@ -913,7 +889,6 @@ nav[role=navigation] li a {
 
 .modal .btn-close svg {
   fill: #8a8a8a;
-  -webkit-transition: fill 300ms linear;
   transition: fill 300ms linear;
   margin: 4px;
   height: 22px;
@@ -922,7 +897,6 @@ nav[role=navigation] li a {
 
 .modal .btn-close svg:hover {
   fill: #242424;
-  -webkit-transition: fill 300ms linear;
   transition: fill 300ms linear;
 }
 
@@ -954,8 +928,6 @@ nav[role=navigation] li a {
 }
 
 .modal-open:checked ~ .modal-wrap .modal-dialog {
-  -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
   top: 20%;
 }

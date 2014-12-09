@@ -3,8 +3,166 @@ Base Rules
 	A Base rule is applied to an element using an element selector, a descendent selector, or a child selector, along with any pseudoclasses. It doesn’t include any class or ID selectors. It is defining the default styling for how that element should look in all occurrences on the page.
 */
 
+html {
+    background-color: $background-color;
+}
+
+body {
+    background-color: #483D8B;   
+}
+
+
+
+//nav[role="navigation"] {
+  //  text-align: left;
+//    margin: 0;
+  //  padding-left: 50px;
+   // padding-right: 30px;
+//}
+
+//nav[role="navigation"] ul, .select {
+    //background-color: #d8c0ff;
+  //  list-style-type: none;
+    //margin: 20px;
+    //padding-left: 50px;
+//}
+
+//nav[role="navigation"] ul li, .select {
+  //  display: inline-block;
+    //margin-left: 70px;
+    //margin-top: 180px;
+    //padding: 0;  
+//}
+
+//nav[role="navigation"] ul li, .design-name {
+  //  display: block;
+    //margin: 20px;
+    //padding: 0;
+//}
+    
+//nav[role="navigation"] ul li, .design-name {
+  //  display: block;
+   // margin-left: 20px;
+    //padding: 0;
+//}
+
+
+//nav[role="navigation"] ul li, .design-name {
+  //  color: $color;
+    //box-sizing: border-box;
+    //@include body-font-regular;
+    //@include fontSize(20px);
+    //padding: 0;
+    //margin: 0 auto;
+    //max-width: 600px;
+    //width: 100%
+    
+//}
+
+.explanation {
+    color: #9370DB;
+    box-sizing: border-box;
+    //@include body-font-regular;
+    //@include fontSize(20px);
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+}
+
+.explanation a:link {
+    color: $color;
+}
+
+.explanation a:visited {
+    color: #9932CC;
+}
+
+
+.participation {
+    color: #9370DB;
+    //box-sizing: border-box;
+    //@include body-font-regular;
+    //@include fontSize(20px);
+      width: 100%;
+}
+
+.participation a:link {
+    color: $color;
+}
+
+.participation a:visited {
+    color: #9932CC;
+}
+
+
+.benefits {
+    color: #9370DB;
+    box-sizing: border-box;
+    //@include body-font-regular;
+    //@include fontSize(20px);
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+}
+
+.benefits a:link {
+    color: $color;
+}
+
+.benefits a:visited {
+    color: #9932CC;
+}
+
+.summary {
+    color: #9370DB; 
+    box-sizing: border-box;
+    //@include body-font-regular;
+    //@include fontSize(20px);
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%; 
+}
+
+.summary a:link {
+    color: $color;
+}
+
+.summary a:visited {
+    color: #9932CC;
+}
 
 .requirements {
-    background-color: red;
-    
+    color: #9370DB;
+    box-sizing: border-box;
+    //@including body-font-regular;
+    //@including fontSize(20px);
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
 }
+
+.requirements a:link {
+    color: $color;
+}
+
+.requirements a:visited {
+    color: #9932CC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
